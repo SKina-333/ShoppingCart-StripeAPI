@@ -1,0 +1,40 @@
+.addProduct-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    font-family: var(--Poppin);
+    gap: 10px;
+}
+
+
+
+.addProduct-container .addProduct {
+    position: relative;
+    right: 200px;
+    
+    padding: 20px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.addProduct-container .addProduct:hover {
+    transform: scale(1.02);
+}
+
+.addProduct-container .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.addProduct-container .input-container .submitButton{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

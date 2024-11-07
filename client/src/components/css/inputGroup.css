@@ -1,0 +1,11 @@
+.inputGroup-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputGroup-container input:not([type="file"]) {
+    padding: 20px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 20px;
+}

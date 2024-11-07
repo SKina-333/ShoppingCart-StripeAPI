@@ -3,13 +3,13 @@ import CartItemCard from "../../components/cartItemCard";
 import "./cartContainer.css";
 
 import { CartContext } from "../../contexts/cartContext";
-import { useNavigate } from "react-router-dom";
+
 import axios from "axios";
 
 function CartContainer({ cartItems }) {
 
   const {clearCart} = useContext(CartContext);
-  const navigate = useNavigate();
+  
 
   const handleCheckout = async () => {
     try {

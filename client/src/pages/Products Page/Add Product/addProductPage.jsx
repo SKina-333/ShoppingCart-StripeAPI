@@ -1,14 +1,12 @@
-// import { useContext } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-// import {UserContext} from '../contexts/userContext.jsx';
 import axios from "axios";
 import "./addProductPage.css";
 
 import InputGroup from '../../../components/inputGroup.jsx'
 
 function AddProductPage() {
-  //   const { user, logout } = useContext(UserContext);
 
 
   const [formData, setFormData] = useState({
