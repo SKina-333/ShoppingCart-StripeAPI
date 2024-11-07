@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.image-container {
+    
+    width: 300px; 
+}
+
+.image-container img {
+    border-radius: 10px;
+    width: 100%
+}
+
+.product-card {
+    cursor: pointer;
+    font-family: "Poppins", serif;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.185);
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.product-card:hover {
+    transform: scale(1.02);
+}
+.addButton {
+    margin-top: 20px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addButton:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.562);
+    background-color: rgb(77, 77, 77);
+    
+}

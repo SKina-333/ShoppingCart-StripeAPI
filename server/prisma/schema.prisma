@@ -8,10 +8,11 @@ datasource db {
 }
 
 model products {
-  id       Int    @id @default(autoincrement())
-  name     String @db.VarChar(255)
-  quantity Int
-  price    Int
+  id        Int     @id @default(autoincrement())
+  name      String  @db.VarChar(255)
+  quantity  Int
+  price     Int
+  file_path String? @db.VarChar
 }
 
 model session {

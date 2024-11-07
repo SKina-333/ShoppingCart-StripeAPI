@@ -1,7 +1,7 @@
 //Imports
 require("dotenv").config();
 const express = require("express");
-
+const path = require("path");
 
 
 
@@ -23,12 +23,15 @@ app.listen(port, () => {
 
 
 //Middleware
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 app.use(corsConfig);
 app.use(sessionConfig);
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.use('/products', productRouter)
 app.use('/cart', cartRouter)
+app.use("/product_images", express.static(path.join(__dirname, "product_images")));
+
 
 
 //Routers

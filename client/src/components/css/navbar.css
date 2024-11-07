@@ -1,0 +1,45 @@
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 20px;
+  width: 100%;
+
+  font-family: var(--Quicksand);
+  font-weight: 900;
+  font-size: 20px;
+
+  border: 3px solid black;
+}
+
+.navItem-group {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.navItem-group a {
+  color: black;
+}
+
+.navCart-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cart-indicator {
+  position: absolute;
+  top: 10px;
+  right: -18px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+
